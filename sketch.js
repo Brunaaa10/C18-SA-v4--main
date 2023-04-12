@@ -38,7 +38,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(windouWidth,windowHeight);
+  createCanvas(windowWidth, windowHeight);
   
   trex = createSprite(50, height-20 ,20,50);
   trex.addAnimation("running", trex_running);
@@ -58,7 +58,7 @@ function setup() {
   gameOver.scale = 0.5;
   restart.scale = 0.5;
   
-  invisibleGround = createSprite(widht/2 , height-10, width,10);
+  invisibleGround = createSprite(width/2 , height-10, width,10);
   invisibleGround.visible = false;
   
   //criar grupos de obstáculos e nuvens
